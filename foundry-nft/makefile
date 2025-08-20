@@ -13,3 +13,12 @@ deploy:
 
 mint:
 	@forge script script/Interactions.s.sol:MintNFTOnContract ${NETWORK_ARGS}
+
+deployMoodNFT:	
+	@forge script script/DeployMoodNFT.s.sol:DeployMoodNFT $(NETWORK_ARGS)
+
+mintMoodNFT:
+	@forge script script/MintMoodNFT.s.sol:MintMoodNFT ${NETWORK_ARGS}
+
+flipMoodNFT:
+	@forge script script/FlipMoodNFT.s.sol:FlipMoodNFT ${NETWORK_ARGS}
